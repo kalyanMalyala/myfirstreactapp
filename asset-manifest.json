@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/kalyanchakravarthymalyala.com/static/css/main.f855e6bc.css",
-    "main.js": "/kalyanchakravarthymalyala.com/static/js/main.c1b44ea5.js",
-    "static/js/453.2807b325.chunk.js": "/kalyanchakravarthymalyala.com/static/js/453.2807b325.chunk.js",
-    "static/media/logo.svg": "/kalyanchakravarthymalyala.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/kalyanchakravarthymalyala.com/index.html",
-    "main.f855e6bc.css.map": "/kalyanchakravarthymalyala.com/static/css/main.f855e6bc.css.map",
-    "main.c1b44ea5.js.map": "/kalyanchakravarthymalyala.com/static/js/main.c1b44ea5.js.map",
-    "453.2807b325.chunk.js.map": "/kalyanchakravarthymalyala.com/static/js/453.2807b325.chunk.js.map"
+    "main.css": "/myfirstreactapp.com/static/css/main.f855e6bc.css",
+    "main.js": "/myfirstreactapp.com/static/js/main.f3703bcd.js",
+    "static/js/453.2807b325.chunk.js": "/myfirstreactapp.com/static/js/453.2807b325.chunk.js",
+    "static/media/logo.svg": "/myfirstreactapp.com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/myfirstreactapp.com/index.html",
+    "main.f855e6bc.css.map": "/myfirstreactapp.com/static/css/main.f855e6bc.css.map",
+    "main.f3703bcd.js.map": "/myfirstreactapp.com/static/js/main.f3703bcd.js.map",
+    "453.2807b325.chunk.js.map": "/myfirstreactapp.com/static/js/453.2807b325.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.c1b44ea5.js"
+    "static/js/main.f3703bcd.js"
   ]
 }
