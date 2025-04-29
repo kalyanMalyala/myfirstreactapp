@@ -1,15 +1,40 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f0f4f7, #dfe7ed);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 h1, h2 {
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 ul {
@@ -20,8 +45,199 @@ ul {
 a {
   color: #0073e6;
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
 }
 
 a:hover {
+  color: #1a73e8;
   text-decoration: underline;
+}
+
+/* Tab Navigation Styles */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid #ddd;
+}
+
+.tab {
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tab:hover {
+  color: #0073e6;
+}
+
+.tab.active {
+  color: #0073e6;
+  border-bottom: 2px solid #0073e6;
+}
+
+.tab-content {
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.card p {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin: 10px 0;
+}
+
+.card p a {
+  font-weight: bold;
+  color: #0073e6;
+  transition: color 0.3s ease;
+}
+
+.card p a:hover {
+  color: #1a73e8;
+}
+
+/* Section Background */
+section {
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section:nth-of-type(even) {
+  background: linear-gradient(135deg, #dfe7ed, #f0f4f7);
+}
+
+section h2 {
+  color: #34495e;
+}
+
+/* Scroll Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Delay animation for different sections */
+section:nth-child(1) {
+  animation-delay: 0.2s;
+}
+section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+section:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Footer */
+footer {
+  background-color: #34495e;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .card {
+    padding: 15px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
 }
