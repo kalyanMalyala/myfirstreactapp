@@ -6,6 +6,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Achievements from './Achievements';
 import Contact from './Contact';
+import Education from './Education';
 
 function Navigation() {
   const [activeTab, setActiveTab] = useState('home');
@@ -48,6 +49,13 @@ function Navigation() {
           Achievements
         </li>
         <li
+          className={`tab ${activeTab === 'education' ? 'active' : ''}`}
+          onClick={() => handleTabClick('education')}
+        >
+            Education
+        </li>
+        
+        <li
           className={`tab ${activeTab === 'contact' ? 'active' : ''}`}
           onClick={() => handleTabClick('contact')}
         >
@@ -61,6 +69,7 @@ function Navigation() {
 {activeTab === 'skills' && <Skills />}
 {activeTab === 'projects' && <Projects />}
 {activeTab === 'achievements' && <Achievements />}
+{activeTab === 'education' && <Education />}
 {activeTab === 'contact' && <Contact />}
      </div>
     </nav>
